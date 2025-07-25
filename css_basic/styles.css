@@ -1,0 +1,61 @@
+/* Apply basic reset and default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Make the body a flex container arranged in column layout */
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #0077b6;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Make main a horizontal flex container */
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+  min-height: 0; /* Needed to make overflow-y work correctly */
+}
+
+/* Style article (takes 2/3 of the space) */
+article {
+  flex: 2;
+  padding: 1rem;
+  overflow-y: auto;
+  background-color: #f0f8ff;
+}
+
+/* Style aside (takes 1/3 of the space) */
+aside {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  background-color: #e0e0e0;
+}
+
+/* Style footer */
+footer {
+  background-color: #023e8a;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Optional: make links in nav styled nicely */
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
