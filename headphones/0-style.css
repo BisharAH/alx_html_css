@@ -1,0 +1,10 @@
+:root {
+  --main-color: #FF6565;
+  --font-primary: 'Source Sans Pro', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
