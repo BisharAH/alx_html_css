@@ -1,0 +1,312 @@
+:root {
+  --main-color: #FF6565;
+  --font-primary: 'Source Sans Pro', sans-serif;
+  --text-color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* === Reset default styles === */
+
+/* === Body and overall theme === */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  background-color: #1d1d1d;
+}
+
+/* === Header section === */
+header.page1 {
+  background-image: url('/images/headphones_hero_1.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  text-align: center;
+  position: relative;
+}
+
+/* === Navbar styling === */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+.logo img {
+  width: 150px;
+}
+
+/* === Nav links === */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #ff5e5e;
+}
+
+/* === Hero section === */
+.hero h1 {
+  font-size: 3rem;
+  margin: 40px 0 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 20px;
+  line-height: 1.5;
+}
+
+/* === Hero button === */
+.hero button {
+  padding: 12px 30px;
+  font-size: 1rem;
+  background-color: #ff5e5e;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.3s ease;
+}
+
+.hero button:hover {
+  background-color: #e04b4b;
+}
+
+/* === What We Do Section === */
+.what-we-do {
+  padding: 80px 20px;
+  background-color: #fff;
+  text-align: center;
+  color: #333;
+}
+
+/* Heading */
+.what-we-do h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+/* Paragraph under heading */
+.what-we-do p {
+  max-width: 750px;
+  margin: 0 auto 50px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* === Features Grid === */
+.features {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* Each feature box */
+.feature {
+  background: #f6f1f1;
+  border-radius: 10px;
+  padding: 30px 20px;
+  width: 200px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Hover effect */
+.feature:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Feature icon */
+.feature i {
+  font-size: 3rem;
+  color: #ff5e5e;
+  margin-bottom: 15px;
+  display: block;
+}
+
+/* Feature title */
+.feature h3 {
+  font-size: 1.3rem;
+  color: #333;
+  margin-top: 10px;
+}
+
+.Result{
+  background-image: url(./images/headphones_hero_2.jpg);
+}
+
+.Result h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #fff;
+  text-align: center;
+}
+
+/* Paragraph under heading */
+.Result p {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto 50px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #fff;
+}
+
+
+/* Contact Section */
+.contact-us {
+  background: #f5f5f5; /* light background */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-us h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form input,
+.form textarea {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.form input:focus,
+.form textarea:focus {
+  border-color: #ff5a5f; /* highlight color */
+}
+
+.form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form button {
+  background: #ff5a5f;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form button:hover {
+  background: #e04a4e;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #111; /* Dark background for contrast */
+  color: #fff;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-logo img {
+  max-width: 150px;
+}
+
+.footer-social {
+  text-align: right;
+}
+
+.footer-social h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #ff4d4d; /* Accent color */
+}
+
+.footer-social a {
+  display: block;
+  color: #ddd;
+  text-decoration: none;
+  margin-bottom: 5px;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #ff4d4d;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #444;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.pentagones {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pentagon img{
+  width: 150px;
+  height: 150px;
+  background: url("/images/pentagone.png") center/contain no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: var(--text-color);
+  position: relative;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.pentagon:hover {
+  transform: scale(1.1);
+}
+
+.pentagon h3{
+  text-align: center;
+}
